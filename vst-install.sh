@@ -28,7 +28,7 @@ fi
 
 # Check wget
 if [ -e '/usr/bin/wget' ]; then
-    wget https://github.com/5747462/vst/vst-install-ubuntu.sh -O vst-install-ubuntu.sh
+    wget https://raw.githubusercontent.com/5747462/vst/main/vst-install-ubuntu.sh -O vst-install-ubuntu.sh
     if [ "$?" -eq '0' ]; then
         bash vst-install-ubuntu.sh $*
         exit
@@ -40,7 +40,7 @@ fi
 
 # Check curl
 if [ -e '/usr/bin/curl' ]; then
-    curl -O https://github.com/5747462/vst/vst-install-ubuntu.sh
+    curl -O https://raw.githubusercontent.com/5747462/vst/main/vst-install-ubuntu.sh
     if [ "$?" -eq '0' ]; then
         bash vst-install-ubuntu.sh $*
         exit
